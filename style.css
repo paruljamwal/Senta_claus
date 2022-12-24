@@ -1,5 +1,8 @@
 body {
-    background: #9ac;
+    /* background: #9ac; */
+    background-image: url("https://i.pinimg.com/originals/ca/f4/42/caf44253eba221745bd20c9effe8d71a.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   :root{
