@@ -153,3 +153,24 @@
     border-radius: 100%/120% 120% 80% 80%;
 }
 
+.body::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    border-bottom: 8vmin solid #181818;
+    border-radius: 50%;
+    transform: translate(-50%,0);
+    top: 25%;
+    left: 50%;
+  }
+  
+  .body::after {
+    content: "";
+    width: 22%;
+    height: 15%;
+    border: 1.5vmin solid orange;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1vmin;
+  }
