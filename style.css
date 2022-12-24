@@ -9,20 +9,53 @@
 
 }
 
-/* face  */
 
 .main div, .main div::before, .main div::after{
-position: absolute;
-display: block;
-box-sizing: border-box;
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
 }
 
+/* face  */
 .face{
     width: 35%;
     height: 25%;
-    background-color: bisque;
+    background-color:#fca;
     border-radius: 120% / 50%;
     left: 50%;
     top: 15%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
 }
+
+
+.eye{
+    width: 24%;
+    height: 30%;
+    /* background-color: red; */
+    border-radius: 100%;
+    border-top: 1vmin solid;
+    top: 35%;
+    left: 15%;
+    border: 0.25vmin solid #0000;
+}
+
+.eye + .eye{
+    left: 60%;
+
+}
+
+
+.eyebrow{
+    width: 35%;
+    height: 30%;
+    /* background-color: red; */
+    border-radius: 100%;
+    box-shadow: -0.125vmin -2.2vmin 0 -0.5vmin #fff;
+    top: 25%;
+    left: 8%;
+}
+
+.eyebrow + .eyebrow {
+    right: 7.5%;
+    left: auto;
+  }
