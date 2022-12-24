@@ -1,0 +1,28 @@
+
+.main{
+    width: 80vmin;
+    height: 80vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+/* face  */
+
+.main div, .main div::before, .main div::after{
+position: absolute;
+display: block;
+box-sizing: border-box;
+}
+
+.face{
+    width: 35%;
+    height: 25%;
+    background-color: bisque;
+    border-radius: 120% / 50%;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%);
+}
