@@ -9,6 +9,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background: skyblue;
 
 }
 
@@ -85,9 +86,70 @@
     border-radius:100% 0;
     top: 59%;
     left: 50%;
-    transform: translate(-100%) rotate(15deg);
+    transform: translate(-100%,0) rotate(15deg);
+    z-index: 2;
+    box-shadow: inset -0.25vmin -0.25vmin 0.75vmin #0002
   }
 
   .mustache + .mustache{
-    transform: scaleX(-1) rotate(196deg);
+    transform: scaleX(-1) translate(0, 0) rotate(15deg);
   }
+
+  /* lip */
+  .lip{
+    width: 10%;
+    height: 10%;
+    background: var(--skindark);
+    border-radius: 50%;
+    top: 69%;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 1;
+  }
+
+
+  /* beard  */
+
+  .beard{
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    background: #fff;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100% / 20% 20% 120% 120%;
+    box-shadow: 0 0.5vmin #ddd;
+    filter: drop-shadow(0 0.5vmin 0.5vmin #0002);
+  }
+
+
+.beard::before{
+    content: "";
+    width: 22%;
+    height: 30%;
+    background-color: #fff;
+    left: -7%;
+    top: 8%;
+    color: #fff;
+    border-radius: 100%;
+    box-shadow:
+    2vmin 7vmin 0 2.5vmin,
+    6vmin 12vmin 0 1vmin,
+    16vmin 12vmin 0 2vmin,
+    22vmin 10vmin 0 1vmin,
+    24vmin 6vmin 0 1.6vmin,
+    26vmin 0 
+    ;
+}
+
+.body{
+    width: 150%;
+    height: 300%;
+    background: #c00;
+    left: -25%;
+    top: 100%;
+    z-index: -1;
+    border-radius: 100%/120% 120% 80% 80%;
+}
+
