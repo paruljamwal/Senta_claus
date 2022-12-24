@@ -77,3 +77,17 @@
     inset 0vmin -0.75vmin 0.5vmin -0.25vmin var(--skindark),
     inset 0.5vmin -1vmin 1vmin -0.75vmin var(--skindark);
   }
+
+  .mustache{
+    width: 30%;
+    height: 20%;
+    background: whitesmoke;
+    border-radius:100% 0;
+    top: 59%;
+    left: 50%;
+    transform: translate(-100%) rotate(15deg);
+  }
+
+  .mustache + .mustache{
+    transform: scaleX(-1) rotate(196deg);
+  }
